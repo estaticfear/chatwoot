@@ -1,10 +1,10 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "This is the API documentation for Chatwoot server.",
+    "description": "This is the API documentation for Gobysend server.",
     "version": "1.0.0",
-    "title": "Chatwoot",
-    "termsOfService": "https://www.chatwoot.com/terms-of-service/",
+    "title": "Gobysend",
+    "termsOfService": "https://goby.vn/terms-of-service/",
     "contact": {
       "email": "support@chatwoot.com"
     },
@@ -15,15 +15,9 @@
   },
   "host": "app.chatwoot.com",
   "basePath": "/api/v1/",
-  "schemes": [
-    "https"
-  ],
-  "produces": [
-    "application/json; charset=utf-8"
-  ],
-  "consumes": [
-    "application/json; charset=utf-8"
-  ],
+  "schemes": ["https"],
+  "produces": ["application/json; charset=utf-8"],
+  "consumes": ["application/json; charset=utf-8"],
   "securityDefinitions": {
     "userApiKey": {
       "type": "apiKey",
@@ -46,17 +40,13 @@
   },
   "security": [
     {
-      "userApiKey": [
-
-      ]
+      "userApiKey": []
     }
   ],
   "paths": {
     "/accounts/{account_id}/inboxes": {
       "get": {
-        "tags": [
-          "Inbox"
-        ],
+        "tags": ["Inbox"],
         "operationId": "listAllInboxes",
         "summary": "List all inboxes",
         "description": "List all inboxes available in the current account",
@@ -78,9 +68,7 @@
     },
     "/accounts/{account_id}/inboxes/": {
       "post": {
-        "tags": [
-          "Inbox"
-        ],
+        "tags": ["Inbox"],
         "operationId": "inboxCreation",
         "summary": "Create an inbox",
         "description": "You can create more than one website inbox in each account",
@@ -105,9 +93,7 @@
                   "properties": {
                     "type": {
                       "type": "string",
-                      "enum": [
-                        "web_widget"
-                      ]
+                      "enum": ["web_widget"]
                     },
                     "website_url": {
                       "type": "string",
@@ -153,9 +139,7 @@
     },
     "/accounts/{account_id}/inboxes/{id}": {
       "patch": {
-        "tags": [
-          "Inbox"
-        ],
+        "tags": ["Inbox"],
         "operationId": "updateInbox",
         "summary": "Update Inbox",
         "description": "Add avatar and disable auto assignment for an inbox",
@@ -235,9 +219,7 @@
     },
     "/accounts/{account_id}/inboxes/{id}/set_agent_bot": {
       "post": {
-        "tags": [
-          "Inbox"
-        ],
+        "tags": ["Inbox"],
         "operationId": "updateAgentBot",
         "summary": "Add or remove agent bot",
         "description": "To add an agent bot pass agent_bot id, to remove agent bot from an inbox pass null",
@@ -280,9 +262,7 @@
     },
     "/agent_bots": {
       "get": {
-        "tags": [
-          "AgentBot"
-        ],
+        "tags": ["AgentBot"],
         "operationId": "listAgentBots",
         "summary": "List all agentbots",
         "description": "List all available agentbots for the current installation",
@@ -304,9 +284,7 @@
     },
     "/accounts/{account_id}/conversations": {
       "get": {
-        "tags": [
-          "Conversation"
-        ],
+        "tags": ["Conversation"],
         "operationId": "conversationSearch",
         "description": "Search for conversations containing a messages with the query string",
         "summary": "Conversations Search",
@@ -320,21 +298,13 @@
             "name": "assignee_type",
             "in": "query",
             "type": "string",
-            "enum": [
-              "me",
-              "unassigned",
-              "all"
-            ]
+            "enum": ["me", "unassigned", "all"]
           },
           {
             "name": "status",
             "in": "query",
             "type": "string",
-            "enum": [
-              "open",
-              "resolved",
-              "bot"
-            ]
+            "enum": ["open", "resolved", "bot"]
           },
           {
             "name": "page",
@@ -375,22 +345,16 @@
         }
       },
       "post": {
-        "tags": [
-          "Conversation"
-        ],
+        "tags": ["Conversation"],
         "operationId": "newConversation",
         "summary": "Create New Conversation",
         "description": "Creating a conversation in chatwoot requires a source id. \n\n Learn more about source_id: https://github.com/chatwoot/chatwoot/wiki/Building-on-Top-of-Chatwoot:-Importing-Existing-Contacts-and-Creating-Conversations",
         "security": [
           {
-            "userApiKey": [
-
-            ]
+            "userApiKey": []
           },
           {
-            "agentBotApiKey": [
-
-            ]
+            "agentBotApiKey": []
           }
         ],
         "parameters": [
@@ -460,9 +424,7 @@
         }
       ],
       "get": {
-        "tags": [
-          "Conversation"
-        ],
+        "tags": ["Conversation"],
         "operationId": "get-details-of-a-conversation",
         "summary": "Conversation Details",
         "description": "Get all details regarding a conversation with all messages in the conversation",
@@ -492,22 +454,16 @@
         }
       ],
       "post": {
-        "tags": [
-          "Conversation"
-        ],
+        "tags": ["Conversation"],
         "operationId": "toggle-status-of-a-conversation",
         "summary": "Toggle Status",
         "description": "Toggles the status of the conversation between open and resolved",
         "security": [
           {
-            "userApiKey": [
-
-            ]
+            "userApiKey": []
           },
           {
-            "agentBotApiKey": [
-
-            ]
+            "agentBotApiKey": []
           }
         ],
         "parameters": [
@@ -520,11 +476,7 @@
               "properties": {
                 "status": {
                   "type": "string",
-                  "enum": [
-                    "open",
-                    "resolved",
-                    "bot"
-                  ],
+                  "enum": ["open", "resolved", "bot"],
                   "required": true,
                   "description": "The status of the conversation"
                 }
@@ -550,25 +502,17 @@
     },
     "/accounts/{account_id}/conversations/{id}/messages": {
       "post": {
-        "tags": [
-          "Messages"
-        ],
+        "tags": ["Messages"],
         "operationId": "conversationNewMessageAttachment",
         "summary": "Create New Message Attachment",
         "description": "Create an attachment Message",
-        "consumes": [
-          "multipart/form-data"
-        ],
+        "consumes": ["multipart/form-data"],
         "security": [
           {
-            "userApiKey": [
-
-            ]
+            "userApiKey": []
           },
           {
-            "agentBotApiKey": [
-
-            ]
+            "agentBotApiKey": []
           }
         ],
         "parameters": [
@@ -589,10 +533,7 @@
             "in": "formData",
             "name": "message_type",
             "type": "string",
-            "enum": [
-              "outgoing",
-              "incoming"
-            ]
+            "enum": ["outgoing", "incoming"]
           },
           {
             "in": "formData",
@@ -643,9 +584,7 @@
         }
       ],
       "get": {
-        "tags": [
-          "Messages"
-        ],
+        "tags": ["Messages"],
         "operationId": "list-all-messages",
         "summary": "Get messages",
         "description": "List all messages of a conversation",
@@ -673,22 +612,16 @@
         }
       },
       "post": {
-        "tags": [
-          "Messages"
-        ],
+        "tags": ["Messages"],
         "operationId": "create-a-new-message-in-a-conversation",
         "summary": "Create New Message",
         "description": "Create a new message in the conversation",
         "security": [
           {
-            "userApiKey": [
-
-            ]
+            "userApiKey": []
           },
           {
-            "agentBotApiKey": [
-
-            ]
+            "agentBotApiKey": []
           }
         ],
         "parameters": [
@@ -737,9 +670,7 @@
         }
       ],
       "delete": {
-        "tags": [
-          "Messages"
-        ],
+        "tags": ["Messages"],
         "operationId": "delete-a-message",
         "summary": "Delete a message",
         "description": "Delete a message and it's attachments from the conversation.",
@@ -766,9 +697,7 @@
         }
       ],
       "get": {
-        "tags": [
-          "Conversation Labels"
-        ],
+        "tags": ["Conversation Labels"],
         "operationId": "list-all-labels-of-a-conversation",
         "summary": "List Labels",
         "description": "Lists all the labels of a conversation",
@@ -788,9 +717,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Conversation Labels"
-        ],
+        "tags": ["Conversation Labels"],
         "operationId": "conversation-add-labels",
         "summary": "Add Labels",
         "description": "Add labels to a conversation. Note that this API would overwrite the existing list of labels associated to the conversation.",
@@ -839,9 +766,7 @@
         }
       ],
       "post": {
-        "tags": [
-          "Conversation Assignment"
-        ],
+        "tags": ["Conversation Assignment"],
         "operationId": "assign-a-conversation",
         "summary": "Assign Conversation",
         "description": "Assign a conversation to an agent or a team",
@@ -883,9 +808,7 @@
     },
     "/accounts/{account_id}/contacts": {
       "get": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "operationId": "contactList",
         "description": "Listing all the contacts with pagination (Page size = 15)",
         "summary": "List Contacts",
@@ -913,9 +836,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "operationId": "contactCreate",
         "description": "Create New Contact",
         "summary": "Create Contact",
@@ -947,9 +868,7 @@
     },
     "/accounts/{account_id}/contacts/{id}": {
       "get": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "operationId": "contactDetails",
         "summary": "Show Contact",
         "parameters": [
@@ -977,9 +896,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "operationId": "contactUpdate",
         "summary": "Update Contact",
         "parameters": [
@@ -1017,9 +934,7 @@
     },
     "/accounts/{account_id}/contacts/{id}/conversations": {
       "get": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "operationId": "contactConversations",
         "summary": "Conversations",
         "parameters": [
@@ -1049,9 +964,7 @@
     },
     "/accounts/{account_id}/contacts/search": {
       "get": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "operationId": "contactSearch",
         "description": "Search the contacts using a search key, currently supports email search (Page size = 15)",
         "summary": "Search Contacts",
@@ -1091,9 +1004,7 @@
     },
     "/accounts/{account_id}/contacts/{id}/contact_inboxes": {
       "post": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "operationId": "contactInboxCreation",
         "description": "Create a contact inbox record for an inbox",
         "summary": "Create contact inbox",
@@ -1138,9 +1049,7 @@
     },
     "/accounts/{account_id}/contacts/{id}/contactable_inboxes": {
       "get": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "operationId": "contactableInboxesGet",
         "description": "Get List of contactable Inboxes",
         "summary": "Get Contactable Inboxes",
@@ -1165,9 +1074,7 @@
     },
     "/profile": {
       "get": {
-        "tags": [
-          "Profile"
-        ],
+        "tags": ["Profile"],
         "operationId": "fetchProfile",
         "summary": "Fetch user profile",
         "description": "Get the user profile details",
@@ -1191,9 +1098,7 @@
         }
       ],
       "get": {
-        "tags": [
-          "Teams"
-        ],
+        "tags": ["Teams"],
         "operationId": "list-all-teams",
         "summary": "List all teams",
         "description": "List all teams available in the current account",
@@ -1210,9 +1115,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Teams"
-        ],
+        "tags": ["Teams"],
         "operationId": "create-a-team",
         "summary": "Create a team",
         "description": "Create a team in the account",
@@ -1252,9 +1155,7 @@
         }
       ],
       "get": {
-        "tags": [
-          "Teams"
-        ],
+        "tags": ["Teams"],
         "operationId": "get-details-of-a-single-team",
         "summary": "Get a team details",
         "description": "Get the details of a team in the account",
@@ -1274,9 +1175,7 @@
         }
       },
       "patch": {
-        "tags": [
-          "Teams"
-        ],
+        "tags": ["Teams"],
         "operationId": "update-a-team",
         "summary": "Update a team",
         "description": "Update a team's attributes",
@@ -1303,9 +1202,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Teams"
-        ],
+        "tags": ["Teams"],
         "operationId": "delete-a-team",
         "summary": "Delete a team",
         "description": "Delete a team from the account",
@@ -1329,9 +1226,7 @@
         }
       ],
       "get": {
-        "tags": [
-          "Integrations"
-        ],
+        "tags": ["Integrations"],
         "operationId": "get-details-of-all-integrations",
         "summary": "List all the Integrations",
         "description": "Get the details of all Integrations available for the account",
@@ -1353,9 +1248,7 @@
     },
     "/accounts/{account_id}/integrations/hooks": {
       "post": {
-        "tags": [
-          "Integrations"
-        ],
+        "tags": ["Integrations"],
         "operationId": "create-an-integration-hook",
         "summary": "Create an integration hook",
         "description": "Create an integration hook",
@@ -1385,9 +1278,7 @@
         }
       },
       "patch": {
-        "tags": [
-          "Integrations"
-        ],
+        "tags": ["Integrations"],
         "operationId": "update-an-integrations-hook",
         "summary": "Update an Integration Hook",
         "description": "Update an Integration Hook",
@@ -1420,9 +1311,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Integrations"
-        ],
+        "tags": ["Integrations"],
         "operationId": "delete-an-integration-hook",
         "summary": "Delete an Integration Hook",
         "description": "Delete an Integration Hook",
@@ -1537,11 +1426,7 @@
         },
         "status": {
           "type": "string",
-          "enum": [
-            "open",
-            "resolved",
-            "bot"
-          ],
+          "enum": ["open", "resolved", "bot"],
           "description": "The status of the conversation"
         },
         "timestamp": {
@@ -1573,12 +1458,7 @@
         },
         "content_type": {
           "type": "string",
-          "enum": [
-            "text",
-            "input_select",
-            "cards",
-            "form"
-          ],
+          "enum": ["text", "input_select", "cards", "form"],
           "description": "The type of the template message"
         },
         "content_attributes": {
@@ -1587,12 +1467,7 @@
         },
         "message_type": {
           "type": "string",
-          "enum": [
-            "incoming",
-            "outgoing",
-            "activity",
-            "template"
-          ],
+          "enum": ["incoming", "outgoing", "activity", "template"],
           "description": "The type of the message"
         },
         "created_at": {
@@ -1643,10 +1518,7 @@
         },
         "role": {
           "type": "string",
-          "enum": [
-            "agent",
-            "administrator"
-          ]
+          "enum": ["agent", "administrator"]
         },
         "confirmed": {
           "type": "boolean"
@@ -1774,10 +1646,7 @@
         },
         "role": {
           "type": "string",
-          "enum": [
-            "administrator",
-            "agent"
-          ],
+          "enum": ["administrator", "agent"],
           "description": "The user role in the account"
         }
       }
@@ -1891,10 +1760,7 @@
             },
             "availability_status": {
               "type": "string",
-              "enum": [
-                "online",
-                "offline"
-              ],
+              "enum": ["online", "offline"],
               "description": "Availability status of the user"
             }
           }
@@ -2109,10 +1975,7 @@
             },
             "current_status": {
               "type": "string",
-              "enum": [
-                "open",
-                "resolved"
-              ]
+              "enum": ["open", "resolved"]
             },
             "conversation_id": {
               "type": "number"
@@ -2196,10 +2059,7 @@
         },
         "message_type": {
           "type": "string",
-          "enum": [
-            "outgoing",
-            "incoming"
-          ]
+          "enum": ["outgoing", "incoming"]
         },
         "private": {
           "type": "boolean",
@@ -2207,13 +2067,7 @@
         },
         "content_type": {
           "type": "string",
-          "enum": [
-            "input_email",
-            "cards",
-            "input_select",
-            "form",
-            "article"
-          ],
+          "enum": ["input_email", "cards", "input_select", "form", "article"],
           "example": "cards",
           "description": "if you want to create custom message types"
         },

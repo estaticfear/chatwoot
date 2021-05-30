@@ -8,7 +8,7 @@
       "HEADER_BTN_TXT": "Legg til ny webhook",
       "LOADING": "Henter tilknyttede webhooks",
       "SEARCH_404": "Det finnes ingen elementer som samsvarer med denne spørringen",
-      "SIDEBAR_TXT": "<p><b>Webhooks</b> </p> <p>Webhooks er HTTP callbacks, som kan defineres for hver konto. De utløses av hendelser som opprettelse av meldinger i Chatwoot. Du kan opprette mer enn en webhook for denne kontoen. <br /><br /> For å opprette en <b>webhook</b>, klikk på <b>Legg til ny webhook</b>. Du kan også fjerne en eksisterende webhook ved å klikke på slett.</p>",
+      "SIDEBAR_TXT": "<p><b>Webhooks</b> </p> <p>Webhooks er HTTP callbacks, som kan defineres for hver konto. De utløses av hendelser som opprettelse av meldinger i Gobysend. Du kan opprette mer enn en webhook for denne kontoen. <br /><br /> For å opprette en <b>webhook</b>, klikk på <b>Legg til ny webhook</b>. Du kan også fjerne en eksisterende webhook ved å klikke på slett.</p>",
       "LIST": {
         "404": "Det er ingen webhook-er konfigurert for denne kontoen.",
         "TITLE": "Administrer webhooks",
