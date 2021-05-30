@@ -29,7 +29,7 @@
     ],
     "ADD": {
       "FB": {
-        "HELP": "PS: Logując się, uzyskujemy dostęp tylko do wiadomości Twojej strony. Chatwoot nigdy nie może uzyskać dostępu do prywatnych wiadomości.",
+        "HELP": "PS: Logując się, uzyskujemy dostęp tylko do wiadomości Twojej strony. Gobysend nigdy nie może uzyskać dostępu do prywatnych wiadomości.",
         "CHOOSE_PAGE": "Wybierz stronę",
         "CHOOSE_PLACEHOLDER": "Wybierz stronę z listy",
         "INBOX_NAME": "Nazwa skrzynki odbiorczej",

@@ -43,7 +43,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "اکنون می‌توانید ایمیل‌ها را در دامنه سفارشی خود دریافت کنید."
       }
     },
-    "UPDATE_CHATWOOT": "به روزرسانی%{latestChatwootVersion} برای Chatwoot در دسترس است. لطفا نمونه خود را به روز کنید."
+    "UPDATE_CHATWOOT": "به روزرسانی%{latestChatwootVersion} برای Gobysend در دسترس است. لطفا نمونه خود را به روز کنید."
   },
   "FORMS": {
     "MULTISELECT": {
@@ -58,12 +58,7 @@
     "LIST": {
       "LOADING_MESSAGE": "در حال بارگیری اعلان ها...",
       "404": "اعلانی وجود ندارد",
-      "TABLE_HEADER": [
-        "نام",
-        "شماره تلفن",
-        "گفتگوها",
-        "آخرین تماس"
-      ]
+      "TABLE_HEADER": ["نام", "شماره تلفن", "گفتگوها", "آخرین تماس"]
     },
     "TYPE_LABEL": {
       "conversation_creation": "گفتگوی جدید",

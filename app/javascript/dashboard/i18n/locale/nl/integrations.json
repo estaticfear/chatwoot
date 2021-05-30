@@ -12,15 +12,12 @@
       "LIST": {
         "404": "Er zijn geen webhooks geconfigureerd voor dit account.",
         "TITLE": "Webhooks beheren",
-        "TABLE_HEADER": [
-          "Webhook eindpunt",
-          "acties"
-        ]
+        "TABLE_HEADER": ["Webhook eindpunt", "acties"]
       },
       "ADD": {
         "CANCEL": "annuleren",
         "TITLE": "Nieuwe webhook toevoegen",
-        "DESC": "Webhook events bieden je realtime informatie over wat er gebeurt in je Chatwoot account. Voer een geldige URL in om een callback te configureren.",
+        "DESC": "Webhook events bieden je realtime informatie over wat er gebeurt in je Gobysend account. Voer een geldige URL in om een callback te configureren.",
         "FORM": {
           "END_POINT": {
             "LABEL": "Webhook URL",

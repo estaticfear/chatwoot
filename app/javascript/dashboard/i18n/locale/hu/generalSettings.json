@@ -43,7 +43,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "Most már goadhatsz e-maileket az egyedi domaineden."
       }
     },
-    "UPDATE_CHATWOOT": "Egy frissítés elérhető a Chatwoothoz %{latestChatwootVersion}. Kérjük frissítsd a telepítésed."
+    "UPDATE_CHATWOOT": "Egy frissítés elérhető a Gobysendhoz %{latestChatwootVersion}. Kérjük frissítsd a telepítésed."
   },
   "FORMS": {
     "MULTISELECT": {

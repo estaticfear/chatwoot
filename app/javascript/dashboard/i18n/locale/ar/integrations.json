@@ -12,15 +12,12 @@
       "LIST": {
         "404": "لا توجد webhooks مكونة لهذا الحساب.",
         "TITLE": "إدارة الـ webhooks",
-        "TABLE_HEADER": [
-          "Webhook endpoint",
-          "الإجراءات"
-        ]
+        "TABLE_HEADER": ["Webhook endpoint", "الإجراءات"]
       },
       "ADD": {
         "CANCEL": "إلغاء",
         "TITLE": "إضافة webhook جديد",
-        "DESC": "أحداث Webhook توفر لك معلومات في الوقت الحقيقي حول ما يحدث في حساب Chatwoot الخاص بك. الرجاء إدخال عنوان URL صالح لتكوين callback.",
+        "DESC": "أحداث Webhook توفر لك معلومات في الوقت الحقيقي حول ما يحدث في حساب Gobysend الخاص بك. الرجاء إدخال عنوان URL صالح لتكوين callback.",
         "FORM": {
           "END_POINT": {
             "LABEL": "رابط Webhook",

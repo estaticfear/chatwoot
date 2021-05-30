@@ -43,7 +43,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "您現在可以在您的自定義域名的電子信箱中接收消息。"
       }
     },
-    "UPDATE_CHATWOOT": "An update %{latestChatwootVersion} for Chatwoot is available. Please update your instance."
+    "UPDATE_CHATWOOT": "An update %{latestChatwootVersion} for Gobysend is available. Please update your instance."
   },
   "FORMS": {
     "MULTISELECT": {
@@ -58,12 +58,7 @@
     "LIST": {
       "LOADING_MESSAGE": "載入更多通知...",
       "404": "沒有通知",
-      "TABLE_HEADER": [
-        "姓名",
-        "聯絡人電話",
-        "對話",
-        "Last Contacted"
-      ]
+      "TABLE_HEADER": ["姓名", "聯絡人電話", "對話", "Last Contacted"]
     },
     "TYPE_LABEL": {
       "conversation_creation": "新對話",

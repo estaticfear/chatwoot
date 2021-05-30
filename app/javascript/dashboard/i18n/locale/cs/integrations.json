@@ -12,15 +12,12 @@
       "LIST": {
         "404": "Pro tento účet nejsou nakonfigurovány žádné webové háčky.",
         "TITLE": "Spravovat webové háčky",
-        "TABLE_HEADER": [
-          "Koncový bod webhooku",
-          "Akce"
-        ]
+        "TABLE_HEADER": ["Koncový bod webhooku", "Akce"]
       },
       "ADD": {
         "CANCEL": "Zrušit",
         "TITLE": "Přidat nový webový háček",
-        "DESC": "Události webhooku vám poskytují reálné informace o tom, co se děje ve vašem Chatwoot účtu. Zadejte prosím platnou URL pro nastavení hovoru.",
+        "DESC": "Události webhooku vám poskytují reálné informace o tom, co se děje ve vašem Gobysend účtu. Zadejte prosím platnou URL pro nastavení hovoru.",
         "FORM": {
           "END_POINT": {
             "LABEL": "URL webového háčku",

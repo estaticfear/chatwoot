@@ -43,7 +43,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "Du kannst E-Mails jetzt von der festgelegten Domain erhalten."
       }
     },
-    "UPDATE_CHATWOOT": "Ein Update %{latestChatwootVersion} für Chatwoot ist verfügbar. Bitte aktualisiere deine Installation."
+    "UPDATE_CHATWOOT": "Ein Update %{latestChatwootVersion} für Gobysend ist verfügbar. Bitte aktualisiere deine Installation."
   },
   "FORMS": {
     "MULTISELECT": {
@@ -58,12 +58,7 @@
     "LIST": {
       "LOADING_MESSAGE": "Benachrichtigungen werden geladen...",
       "404": "Keine Benachrichtigungen",
-      "TABLE_HEADER": [
-        "Name",
-        "Telefonnummer",
-        "Gespräche",
-        "Letzter Kontakt"
-      ]
+      "TABLE_HEADER": ["Name", "Telefonnummer", "Gespräche", "Letzter Kontakt"]
     },
     "TYPE_LABEL": {
       "conversation_creation": "Neue Unterhaltung",

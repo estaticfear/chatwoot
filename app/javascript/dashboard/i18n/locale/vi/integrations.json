@@ -12,15 +12,12 @@
       "LIST": {
         "404": "Không có webhook nào được định cấu hình cho tài khoản này.",
         "TITLE": "Quản lý webhooks",
-        "TABLE_HEADER": [
-          "Webhook endpoint",
-          "Hành động"
-        ]
+        "TABLE_HEADER": ["Webhook endpoint", "Hành động"]
       },
       "ADD": {
         "CANCEL": "Xoá",
         "TITLE": "Thêm mới webhook",
-        "DESC": "Webhook events cung cấp cho bạn thông tin thời gian thực về những gì đang xảy ra trong tài khoản Chatwoot của bạn. Vui lòng nhập một URL hợp lệ để định cấu hình một cuộc gọi lại.",
+        "DESC": "Webhook events cung cấp cho bạn thông tin thời gian thực về những gì đang xảy ra trong tài khoản Gobysend của bạn. Vui lòng nhập một URL hợp lệ để định cấu hình một cuộc gọi lại.",
         "FORM": {
           "END_POINT": {
             "LABEL": "Webhook URL",

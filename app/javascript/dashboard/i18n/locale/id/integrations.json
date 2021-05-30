@@ -12,15 +12,12 @@
       "LIST": {
         "404": "Tidak ada webhook yang dikonfigurasi untuk akun ini.",
         "TITLE": "Kelola webhook",
-        "TABLE_HEADER": [
-          "Endpoint webhook",
-          "Aksi"
-        ]
+        "TABLE_HEADER": ["Endpoint webhook", "Aksi"]
       },
       "ADD": {
         "CANCEL": "Batalkan",
         "TITLE": "Tambah webhook baru",
-        "DESC": "Acara Webhook memberi Anda informasi realtime tentang apa yang terjadi di akun Chatwoot Anda. Harap masukkan URL yang valid untuk mengkonfigurasi callback.",
+        "DESC": "Acara Webhook memberi Anda informasi realtime tentang apa yang terjadi di akun Gobysend Anda. Harap masukkan URL yang valid untuk mengkonfigurasi callback.",
         "FORM": {
           "END_POINT": {
             "LABEL": "URL Webhook",

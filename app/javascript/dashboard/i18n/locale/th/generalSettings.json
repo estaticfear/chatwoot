@@ -43,7 +43,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "คุณสามารถรับอีเมล์ในโดเมนเเบบกำหนดเองได้เเล้ว"
       }
     },
-    "UPDATE_CHATWOOT": "An update %{latestChatwootVersion} for Chatwoot is available. Please update your instance."
+    "UPDATE_CHATWOOT": "An update %{latestChatwootVersion} for Gobysend is available. Please update your instance."
   },
   "FORMS": {
     "MULTISELECT": {
@@ -58,12 +58,7 @@
     "LIST": {
       "LOADING_MESSAGE": "Loading notifications...",
       "404": "No Notifications",
-      "TABLE_HEADER": [
-        "ชื่อ",
-        "หมายเลขโทรศัพท์",
-        "การสนทนา",
-        "Last Contacted"
-      ]
+      "TABLE_HEADER": ["ชื่อ", "หมายเลขโทรศัพท์", "การสนทนา", "Last Contacted"]
     },
     "TYPE_LABEL": {
       "conversation_creation": "New conversation",
